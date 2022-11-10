@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D Rb = null;
     public float Speed = 1;
     public float JumpForce = 1;
+    public int NumberOfJumps = 0;
+    public int MaxNumberOfJumps = 2;
 
 
 
@@ -17,6 +20,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         Rb = GetComponent<Rigidbody2D>();
+        NumberOfJumps = MaxNumberOfJumps;
     }
 
     // Update is called once per frame
@@ -35,8 +39,19 @@ public class PlayerController : MonoBehaviour
     }
     public void OnJump(InputValue JumpValue)
     {
-        float Pressed=JumpValue.Get<float>();
-        Rb.velocity = new Vector2 (Rb.velocity.x , JumpForce);
-        //Rb.AddForce(new Vector2(0, JumpForce ), ForceMode2D.Impulse);
+        if (NumberOfJumps > 0)
+        {
+            float Pressed = JumpValue.Get<float>();
+            Rb.velocity = new Vector2(Rb.velocity.x, JumpForce);
+            NumberOfJumps--;
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.GetContact(0).normal.y > 0.8f)
+        {
+            NumberOfJumps = MaxNumberOfJumps;
+        }
     }
 }
