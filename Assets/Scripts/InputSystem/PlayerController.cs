@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public float JumpForce = 1;
     public int NumberOfJumps = 0;
     public int MaxNumberOfJumps = 2;
+    public int NumberOfDash = 0;
+    public int DashForce = 1;
+    //public int MaxNumberOfDash=1
 
 
 
@@ -30,7 +33,7 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-        Rb.velocity = new Vector2(Movement.x * Speed , Rb.velocity.y);
+        Rb.velocity = new Vector2(Rb.velocity.x + Movement.x * Speed , Rb.velocity.y);
     }
 
     public void OnMove(InputValue moveValue)
@@ -53,5 +56,21 @@ public class PlayerController : MonoBehaviour
         {
             NumberOfJumps = MaxNumberOfJumps;
         }
+
+        if (collision.GetContact(0).normal.y > 0.8f)
+        {
+            NumberOfDash = 1;
+        }
+    }
+
+    public void OnDash()
+    {
+        Debug.Log("ihidsiqhuv");
+        if (NumberOfDash > 0)
+        {
+            Rb.velocity = new Vector2(DashForce, Rb.velocity.y);
+            NumberOfDash--;
+        }
+        
     }
 }
