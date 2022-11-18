@@ -41,8 +41,9 @@ public class PlayerController : MonoBehaviour
         {
             Renderer.flipX = Movement.x < 0;
         }
-        animator.SetBool("IsJumping", Rb.velocity.y > 0);
         animator.SetBool("IsFalling", Rb.velocity.y < 0);
+        animator.SetBool("IsIdle", Rb.velocity == Vector2.zero);
+        animator.SetBool("IsJumping", Input.GetButton("Jump"));
 
     }
 
