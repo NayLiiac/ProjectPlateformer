@@ -128,7 +128,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -5}
+        - {x: -6, y: -1}
+        - {x: -3, y: 3}
+        - {x: 4, y: 7}
+        - {x: 7, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: dc63972bc46847c4eafcabac053f077d
@@ -149,7 +155,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -6, y: 6}
+        - {x: 2, y: 0}
+        - {x: 6, y: -5}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: af055809b562c43428ddea82c48b322f
@@ -632,7 +644,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 0e87af00e96b7574aa3d61db3bd486a9
@@ -653,7 +669,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: ffb0b18e57f778b4b98cd2784e206eac
@@ -1366,8 +1386,8 @@ TextureImporter:
       Wasteland-Files_9: 58878708
       Wasteland-Files_18: -1821530836
       Wasteland-Files_26: -1573783852
-      Wasteland-Files_13: -812676558
       Wasteland-Files_22: 2097569204
+      Wasteland-Files_13: -812676558
       Wasteland-Files_40: -596484046
       Wasteland-Files_28: 782720548
       Wasteland-Files_32: 967358309
