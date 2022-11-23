@@ -15,7 +15,9 @@ public class PlayerController : MonoBehaviour
     public int NumberOfJumps = 0;
     public int MaxNumberOfJumps = 2;
     public int NumberOfDash = 0;
-    public int DashForce = 0;
+    public int DashForce = 1;
+    public float DashTime=1f;
+    public bool Dashing = false;
 
 
 
@@ -34,16 +36,19 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-        Rb.velocity = new Vector2(Movement.x * Speed, Rb.velocity.y);
+        
+        if (!Dashing)
+        {
+            Rb.velocity = new Vector2(Movement.x * Speed, Rb.velocity.y);
+        }
+
 
         animator.SetBool("IsRunning", Rb.velocity.x != 0);
         if (Movement.x != 0)
         {
             Renderer.flipX = Movement.x < 0;
         }
-        animator.SetBool("IsFalling", Rb.velocity.y < 0);
         animator.SetBool("IsIdle", Rb.velocity == Vector2.zero);
-        animator.SetBool("IsJumping", Input.GetButton("Jump"));
 
     }
 
@@ -61,16 +66,39 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void OnDash()
+    {
+        if (NumberOfDash > 0 && Rb.velocity.x != 0)
+        {
+            Dashing = true;
+            Rb.gravityScale = 0f;
+            if (Movement.x > 0)
+            {
+                Rb.velocity = new Vector2(DashForce, 0);
+            }
+            else
+            {
+                Rb.velocity = new Vector2(-DashForce , 0);
+
+            }
+            NumberOfDash--;
+            StartCoroutine(wait());
+        }
+    }
+
+    public IEnumerator wait()
+    {
+        yield return new WaitForSeconds(DashTime);
+        Rb.gravityScale = 1f;
+        Dashing = false;
+    }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.GetContact(0).normal.y > 0.8f)
         {
             NumberOfJumps = MaxNumberOfJumps;
-        }
-
-        if (collision.GetContact(0).normal.y > 0.8f)
-        {
             NumberOfDash = 1;
+
         }
     }
 }
