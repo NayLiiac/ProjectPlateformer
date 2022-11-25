@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,18 +9,24 @@ public class PlayerController : MonoBehaviour
 {
     Vector2 Movement = Vector2.zero;
     Rigidbody2D Rb = null;
+
     Animator animator = null;
     SpriteRenderer Renderer = null;
+
     public float Speed = 1;
+
     public float JumpForce = 1;
     public int NumberOfJumps = 0;
     public int MaxNumberOfJumps = 2;
+
     public int NumberOfDash = 0;
+    public int MaxNumberOfDash = 1;
     public int DashForce = 1;
     public float DashTime=1f;
     public bool Dashing = false;
-
-
+    public int DashCd = 3;
+    Coroutine dashCooldown;
+    public TextMeshProUGUI DashCount;
 
     void Start()
     {
@@ -27,6 +34,8 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         Renderer = GetComponent<SpriteRenderer>();
         NumberOfJumps = MaxNumberOfJumps;
+        NumberOfDash = MaxNumberOfDash;
+        DashCount.text = ($"Dash : {NumberOfDash}"); 
     }
 
     void Update()
@@ -49,6 +58,7 @@ public class PlayerController : MonoBehaviour
             Renderer.flipX = Movement.x < 0;
         }
         animator.SetBool("IsIdle", Rb.velocity == Vector2.zero);
+        animator.SetBool("IsFalling", Rb.velocity.y < 0);
 
     }
 
@@ -56,8 +66,10 @@ public class PlayerController : MonoBehaviour
     {
         Movement = moveValue.Get<Vector2>();
     }
+
     public void OnJump(InputValue JumpValue)
     {
+        //animator.SetBool("IsJumping", true);
         if (NumberOfJumps > 0)
         {
             float Pressed = JumpValue.Get<float>();
@@ -79,10 +91,14 @@ public class PlayerController : MonoBehaviour
             else
             {
                 Rb.velocity = new Vector2(-DashForce , 0);
-
             }
             NumberOfDash--;
+            DashCount.text = ($"Dash : {NumberOfDash}");
             StartCoroutine(wait());
+        }
+        if (dashCooldown== null)
+        {
+            dashCooldown = StartCoroutine(DashCooldown());
         }
     }
 
@@ -92,12 +108,27 @@ public class PlayerController : MonoBehaviour
         Rb.gravityScale = 1f;
         Dashing = false;
     }
+
+    public IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(DashCd);
+        NumberOfDash++;
+        DashCount.text = ($"Dash : {NumberOfDash}");
+        if (NumberOfDash < MaxNumberOfDash)
+        {
+            dashCooldown = StartCoroutine(DashCooldown());
+        }
+        else
+        {
+            dashCooldown = null;
+        }
+    }
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.GetContact(0).normal.y > 0.8f)
         {
             NumberOfJumps = MaxNumberOfJumps;
-            NumberOfDash = 1;
 
         }
     }
