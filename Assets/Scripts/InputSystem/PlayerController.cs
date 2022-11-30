@@ -66,10 +66,10 @@ public class PlayerController : MonoBehaviour
 
         animator.SetBool("IsFalling", Rb.velocity.y < 0);
 
-        if (Life == 0)
-        {
-            animator;SetBool
-        }
+        //if (Life == 0)
+        //{
+        //    animator;SetBool
+        //}
     }
 
     public void OnMove(InputValue moveValue)
@@ -125,6 +125,7 @@ public class PlayerController : MonoBehaviour
             }
             NumberOfDash--;
             DashCount.text = NumberOfDash.ToString();
+            animator.SetBool("IsDashing", true);
             StartCoroutine(Wait());
         }
         if (dashCooldown == null)
@@ -136,6 +137,7 @@ public class PlayerController : MonoBehaviour
     public IEnumerator Wait()
     {
         yield return new WaitForSeconds(DashTime);
+        animator.SetBool("IsDashing", false);
         Rb.gravityScale = 1f;
         Dashing = false;
     }
