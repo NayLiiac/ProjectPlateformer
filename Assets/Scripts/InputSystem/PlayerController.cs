@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -27,6 +28,8 @@ public class PlayerController : MonoBehaviour
     public int DashCd = 3;
     Coroutine dashCooldown;
     public TextMeshProUGUI DashCount;
+
+    public int Life = 1;
 
     void Start()
     {
@@ -63,6 +66,10 @@ public class PlayerController : MonoBehaviour
 
         animator.SetBool("IsFalling", Rb.velocity.y < 0);
 
+        if (Life == 0)
+        {
+            animator;SetBool
+        }
     }
 
     public void OnMove(InputValue moveValue)
@@ -156,4 +163,6 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+
+    
 }
