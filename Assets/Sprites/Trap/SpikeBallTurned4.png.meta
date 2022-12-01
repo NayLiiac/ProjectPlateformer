@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d102fd9c5b4326a4a8c0f18a56e32cea
+guid: 182cd5c603e15c64db9b98e03f6480f4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpikeBall_0
+      name: SpikeBallTurned4_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 21
-        height: 21
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,29 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75e90c341495c8a4e9c0e2db7325ea99
-      internalID: -282660037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpikeBall_1
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 0
-        width: 21
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 041f177258c3b3342869eae2b3eb0141
-      internalID: 1167306140
+      spriteID: 1c5cc78f885c7a6408c287e5361534f1
+      internalID: 1889366766
       vertices: []
       indices: 
       edges: []
@@ -169,8 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpikeBall_0: -282660037
-      SpikeBall_1: 1167306140
+      SpikeBallTurned4_0: 1889366766
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

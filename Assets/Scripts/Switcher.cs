@@ -18,8 +18,8 @@ public class Switcher : MonoBehaviour
        if (collision.tag == "Player")
         {
             Rb.gravityScale = 1;
-            Destroy(Rb);
             Destroy(Circle,2f);
+            Destroy(gameObject);
         }
     }
 }
