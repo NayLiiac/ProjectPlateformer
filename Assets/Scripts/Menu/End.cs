@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class End : MonoBehaviour
 {
     public string SceneName;
+    
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         SceneManager.LoadScene(SceneName);
+
     }
+
+       
+    
 }
