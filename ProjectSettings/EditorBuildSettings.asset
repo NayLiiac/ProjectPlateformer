@@ -8,5 +8,32 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Menu.unity
     guid: 9449cd3c2c4f1604991662ef8ed2590f
+  - enabled: 1
+    path: Assets/Scenes/Game/LevelSelector.unity
+    guid: 3d3aa2bf070b19f4ea51a7f8b65c10e8
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/Lvl1.unity
+    guid: d4f3a62152bf44b4194598c0ed7bc7ba
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/Lvl2.unity
+    guid: 28f4b85461d9e7240b150356516d9d4b
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/Lvl3.unity
+    guid: d5b189c0290ca8c49b833df5587a6587
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/Lvl4.unity
+    guid: b3836a41cc6a23a448272a536e6e3704
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/Lvl5.unity
+    guid: 75ccc0ea211467a469c196a18aeac60d
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/Lvl6.unity
+    guid: 47c9a3e1b8635814087d3ca536d258d4
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/Lvl7.unity
+    guid: 089985f5728e4384ba5c4d3a469fc3af
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/Lvl8.unity
+    guid: 4b08691baea5ee442b48f3ad61bdb7e1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 50192450185319c4cb61bca8279fb12e, type: 2}
