@@ -4,20 +4,12 @@ using UnityEngine;
 
 public class KillZone : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log(other.gameObject.tag == "player");
-        Destroy(other.gameObject);
+        PlayerController Pc = other.GetComponent<PlayerController>();
+        if (Pc != null)
+        {
+            Pc.Health-=1;
+        }
     }
 }

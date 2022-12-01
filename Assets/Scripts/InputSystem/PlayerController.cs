@@ -29,10 +29,13 @@ public class PlayerController : MonoBehaviour
     Coroutine dashCooldown;
     public TextMeshProUGUI DashCount;
 
-    public int Life = 1;
+    public int Health = 1;
+    public bool DieOneTimeOnlyPlease = false;
 
     void Start()
     {
+        Cursor.visible = false;
+
         Rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         Renderer = GetComponent<SpriteRenderer>();
@@ -59,17 +62,21 @@ public class PlayerController : MonoBehaviour
         {
             Renderer.flipX = Movement.x < 0;
         }
+        if (Health > 0)
+        {
+            animator.SetBool("IsRunning", Rb.velocity.x != 0 && Rb.velocity.y == 0 && Dashing == false);
+            animator.SetBool("IsIdle", Rb.velocity == Vector2.zero);
+            animator.SetBool("IsFalling", Rb.velocity.y < 0);
+        }
 
-        animator.SetBool("IsRunning", Rb.velocity.x != 0 && Rb.velocity.y == 0 && Dashing == false);
+        if (Health <= 0 && !DieOneTimeOnlyPlease)
+        {
+            DieOneTimeOnlyPlease = true;
+            animator.Play("Die");
 
-        animator.SetBool("IsIdle", Rb.velocity == Vector2.zero);
-
-        animator.SetBool("IsFalling", Rb.velocity.y < 0);
-
-        //if (Life == 0)
-        //{
-        //    animator;SetBool
-        //}
+            Cursor.visible = true;
+            GetComponent<PlayerInput>().enabled = false;
+        }
     }
 
     public void OnMove(InputValue moveValue)
@@ -128,7 +135,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsDashing", true);
             StartCoroutine(Wait());
         }
-        if (dashCooldown == null)
+        if (dashCooldown == null && Rb.velocity.x != 0)
         {
             dashCooldown = StartCoroutine(DashCooldown());
         }
@@ -165,6 +172,4 @@ public class PlayerController : MonoBehaviour
 
         }
     }
-
-
 }
