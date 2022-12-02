@@ -7,6 +7,7 @@ public class Switcher : MonoBehaviour
     Rigidbody2D Rb;
     Collider2D Cl;
     public GameObject Circle;
+    public GameObject Parent;
     private void Start()
     {
         Cl = GetComponent<Collider2D>();
@@ -21,5 +22,9 @@ public class Switcher : MonoBehaviour
             Destroy(Circle,2f);
             Destroy(gameObject);
         }
+       if (Parent != null)
+        {
+            Destroy(Parent,3f);
+        } 
     }
 }
