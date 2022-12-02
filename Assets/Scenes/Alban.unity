@@ -396,6 +396,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+--- !u!1 &418299539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 241882952643528171, guid: 333387047da6afc4cb3db4ee04dedb47, type: 3}
+  m_PrefabInstance: {fileID: 3052861495887767391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &670339414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,6 +1175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EvilBall_Switch
       objectReference: {fileID: 0}
+    - target: {fileID: 3052861495648208945, guid: 333387047da6afc4cb3db4ee04dedb47, type: 3}
+      propertyPath: Parent
+      value: 
+      objectReference: {fileID: 418299539}
     - target: {fileID: 3882063227181116741, guid: 333387047da6afc4cb3db4ee04dedb47, type: 3}
       propertyPath: m_RootOrder
       value: 10
