@@ -16,11 +16,7 @@ public class KillZone : MonoBehaviour
         {
             Pc.Health-=1;
             deathCount.OnDeath();
-            Pc.transform.position = SpawnLocation.position;
+            StartCoroutine(Pc.DeathWait());
         }
-        //StartCoroutine(Pc.DeathWait());
-
     }
-
-
 }
