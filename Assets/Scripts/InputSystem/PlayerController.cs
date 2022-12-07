@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
         if (Health <= 0 && !DieOneTimeOnlyPlease)
         {
             DieOneTimeOnlyPlease = true;
-            animator.Play("Die");
+            animator.SetTrigger("IsDead");
 
             Cursor.visible = true;
             GetComponent<PlayerInput>().enabled = false;
@@ -151,10 +151,7 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
         GetComponent<PlayerInput>().enabled = true;
         transform.position = SpawnLocation.position;
-        if (transform.position == SpawnLocation.position)
-        {
-            animator.SetBool("IsDead", false);
-        }
+        animator.Play("Idle");
         DieOneTimeOnlyPlease = false;
 
     }

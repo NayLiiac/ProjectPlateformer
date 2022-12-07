@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class KillZone : MonoBehaviour
 {
-    public Transform SpawnLocation;
-    public GameObject Player;
-    
-
     void OnTriggerEnter2D(Collider2D other)
     {
         PlayerController Pc = other.GetComponent<PlayerController>();
