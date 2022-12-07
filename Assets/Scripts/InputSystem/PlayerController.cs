@@ -31,9 +31,11 @@ public class PlayerController : MonoBehaviour
     Coroutine dashCooldown;
     public TextMeshProUGUI DashCount;
 
-    //Healt and Die Variables
+    //Health and Die Variables
     public int Health = 1;
     public bool DieOneTimeOnlyPlease = false;
+
+
 
     void Start()   
     {
@@ -51,6 +53,8 @@ public class PlayerController : MonoBehaviour
         DashCount.text = NumberOfDash.ToString();
     }
 
+
+
     void Update()
     {
         // Checks if the rigidbody just exist or not
@@ -59,13 +63,13 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        //Checks if the player isn't dashing and allow him to move
+        //Checks if the player isn't dashing and allow it to move
         if (!Dashing)
         {
             Rb.velocity = new Vector2(Movement.x * Speed, Rb.velocity.y);
         }
 
-        //Flips the player's sprite if he goes backward
+        //Flips the player's sprite if it goes backward
         if (Movement.x != 0)
         {
             Renderer.flipX = Movement.x < 0;
@@ -79,7 +83,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsFalling", Rb.velocity.y < 0);
         }
 
-        //Checks the player's Health and set the cursor visible 
+        //Checks the player's Health and sets the cursor visible 
         if (Health <= 0 && !DieOneTimeOnlyPlease)
         {
             DieOneTimeOnlyPlease = true;
@@ -90,13 +94,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+
     //Sets the player's movements
     public void OnMove(InputValue moveValue)
     {
         Movement = moveValue.Get<Vector2>();
     }
 
-    //Allow the player to Jump or Double Jump depending on his position while he still have jump(s) to use
+
+
+    //Allows the player to Jump or Double Jump depending on its position while is still has jump(s) to use
     public void OnJump()
     {
         if (Rb.velocity.y == 0 && NumberOfJumps > 0)
@@ -117,21 +125,37 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    //Set the timing of the Jump animation
+
+
+    //Sets the timing of the Jump animation
     public IEnumerator JumpWait()
     {
         yield return new WaitForSeconds(0.3f);
         animator.SetBool("IsJumping", false);
     }
 
-    //Set the timing of the Double Jump animation
+    //Sets the timing of the Double Jump animation
     public IEnumerator DoubleJumpWait()
     {
         yield return new WaitForSeconds(0.5f);
         animator.SetBool("DoubleJump", false);
     }
 
-    //Alow the player to Dash while he have dash(s) to use and Write the numbers of dashs left to use in a UIText
+    //// Sets the timing of the Death animation
+    //public IEnumerator DeathWait()
+    //{
+    //    yield return new WaitForSeconds(3f);
+    //    animator.SetBool("IsDead", false);
+    //    Health = 1;
+
+
+    //    Cursor.visible = false;
+    //    GetComponent<PlayerInput>().enabled = true;
+    //}
+
+
+
+    //Allows the player to Dash while it has dash(s) to use and Write the numbers of dashs left to use in a UIText
     void OnDash()
     {
         if (NumberOfDash > 0 && Rb.velocity.x != 0)
@@ -157,7 +181,9 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    //Wait for the dash time and modify the GravityScale
+
+
+    //Waits for the dash time and modifies the GravityScale
     public IEnumerator Wait()
     {
         yield return new WaitForSeconds(DashTime);
@@ -165,6 +191,8 @@ public class PlayerController : MonoBehaviour
         Rb.gravityScale = 1f;
         Dashing = false;
     }
+
+
 
     //Sets a cooldown for using dashs
     public IEnumerator DashCooldown()
@@ -182,7 +210,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Reset the jump count to maximum when the bottom collider is triggered by a wall
+
+
+    // Resets the jump count to maximum when the bottom collider is triggered by a wall
     private void OnTriggerEnter2D(Collider2D collision) //By Audran 
     {
         if (collision.tag=="Wall")
