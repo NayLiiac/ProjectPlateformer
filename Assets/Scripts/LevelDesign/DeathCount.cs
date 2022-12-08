@@ -10,7 +10,7 @@ public class DeathCount : MonoBehaviour
     public TextMeshProUGUI Deathcount;
     public int NumberOfDeaths = 0;
 
-    // Initialize number of deaths :
+    // Initializes number of deaths :
     void Start()
     {
         Deathcount.text = NumberOfDeaths.ToString();

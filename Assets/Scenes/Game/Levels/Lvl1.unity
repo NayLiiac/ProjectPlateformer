@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (12)
@@ -318,6 +322,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (4)
@@ -373,6 +381,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9078512617574880160, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
   m_PrefabInstance: {fileID: 38840628}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &168759448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8780903020442536239, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
+  m_PrefabInstance: {fileID: 972003914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &172589851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9078512617574880160, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
@@ -390,6 +403,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (13)
@@ -506,6 +523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (29)
@@ -563,6 +584,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (1)
@@ -620,6 +645,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (30)
@@ -677,6 +706,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (23)
@@ -818,6 +851,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (2)
@@ -875,6 +912,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (19)
@@ -942,6 +983,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (27)
@@ -1053,6 +1098,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (16)
@@ -1110,6 +1159,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (20)
@@ -1307,6 +1360,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (22)
@@ -1406,6 +1463,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (21)
@@ -1468,6 +1529,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (18)
@@ -47380,6 +47445,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (25)
@@ -47475,6 +47544,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (9)
@@ -47537,6 +47610,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (3)
@@ -47598,17 +47675,33 @@ PrefabInstance:
       propertyPath: Deathcount
       value: 
       objectReference: {fileID: 1879057600}
+    - target: {fileID: 2177019515165213507, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302040465052005052, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302040465052005052, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302040465052005052, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8780903020442536233, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8780903020442536233, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.18
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 8780903020442536233, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.08
+      value: -5.12
       objectReference: {fileID: 0}
     - target: {fileID: 8780903020442536233, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -47646,6 +47739,10 @@ PrefabInstance:
       propertyPath: DashCount
       value: 
       objectReference: {fileID: 641852080}
+    - target: {fileID: 8780903020442536237, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
+      propertyPath: SpawnLocation
+      value: 
+      objectReference: {fileID: 1752609596}
     - target: {fileID: 8780903020442536239, guid: c776ca071b3a637478044518a6b1cf34, type: 3}
       propertyPath: m_Name
       value: Player
@@ -70439,6 +70536,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (15)
@@ -70496,6 +70597,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (8)
@@ -71105,6 +71210,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (28)
@@ -71341,7 +71450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380951384}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.84538, y: -20.770754, z: -13.00872}
+  m_LocalPosition: {x: 11.026839, y: -20.818634, z: -13.00872}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -71414,6 +71523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (11)
@@ -71476,6 +71589,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (10)
@@ -71533,6 +71650,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (26)
@@ -71644,6 +71765,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (17)
@@ -71701,6 +71826,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (5)
@@ -71763,6 +71892,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (14)
@@ -71836,6 +71969,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.78
       objectReference: {fileID: 0}
+    - target: {fileID: 3052861496232191587, guid: 333387047da6afc4cb3db4ee04dedb47, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 3052861496232191588, guid: 333387047da6afc4cb3db4ee04dedb47, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.17
@@ -71892,6 +72029,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9221736916702536042, guid: 333387047da6afc4cb3db4ee04dedb47, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 333387047da6afc4cb3db4ee04dedb47, type: 3}
 --- !u!4 &1691613099 stripped
@@ -71904,6 +72045,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9078512617574880160, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
   m_PrefabInstance: {fileID: 1418943747}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1752609595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1752609596}
+  m_Layer: 0
+  m_Name: SpawnLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1752609596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752609595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8, y: -5.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1830981501 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9078512617574880160, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
@@ -71916,6 +72088,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (24)
@@ -72108,6 +72284,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (7)
@@ -72331,6 +72511,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes (6)
@@ -72388,6 +72572,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 70096915}
     m_Modifications:
+    - target: {fileID: 1943589049, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
     - target: {fileID: 4050745031197759575, guid: 4a9240807d49a384ca7323c66311404d, type: 3}
       propertyPath: m_Name
       value: Spikes
@@ -72553,6 +72741,14 @@ PrefabInstance:
     - target: {fileID: 3439122048419274379, guid: e03577833a6ad6f44bd3e163e837c03e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194310304477525896, guid: e03577833a6ad6f44bd3e163e837c03e, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 168759448}
+    - target: {fileID: 8194310304477525896, guid: e03577833a6ad6f44bd3e163e837c03e, type: 3}
+      propertyPath: SpawnLocation
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03577833a6ad6f44bd3e163e837c03e, type: 3}

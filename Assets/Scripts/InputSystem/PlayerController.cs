@@ -34,10 +34,11 @@ public class PlayerController : MonoBehaviour
     //Health and Die Variables
     public int Health = 1;
     public bool DieOneTimeOnlyPlease = false;
+    public Transform SpawnLocation = null;
 
 
 
-    void Start()   
+    void Start()
     {
         //Sets the cursor invisible
         Cursor.visible = false;
@@ -87,7 +88,7 @@ public class PlayerController : MonoBehaviour
         if (Health <= 0 && !DieOneTimeOnlyPlease)
         {
             DieOneTimeOnlyPlease = true;
-            animator.Play("Die");
+            animator.SetTrigger("IsDead");
 
             Cursor.visible = true;
             GetComponent<PlayerInput>().enabled = false;
@@ -141,17 +142,18 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("DoubleJump", false);
     }
 
-    //// Sets the timing of the Death animation
-    //public IEnumerator DeathWait()
-    //{
-    //    yield return new WaitForSeconds(3f);
-    //    animator.SetBool("IsDead", false);
-    //    Health = 1;
+    // Sets the timing of the Death animation
+    public IEnumerator DeathWait()
+    {
+        yield return new WaitForSeconds(3f);
+        Health = 1;
 
-
-    //    Cursor.visible = false;
-    //    GetComponent<PlayerInput>().enabled = true;
-    //}
+        Cursor.visible = false;
+        GetComponent<PlayerInput>().enabled = true;
+        transform.position = SpawnLocation.position;
+        animator.Play("Idle");
+        DieOneTimeOnlyPlease = false;
+    }
 
 
 
@@ -180,7 +182,7 @@ public class PlayerController : MonoBehaviour
             dashCooldown = StartCoroutine(DashCooldown());
         }
     }
-    
+
 
 
     //Waits for the dash time and modifies the GravityScale
@@ -215,7 +217,7 @@ public class PlayerController : MonoBehaviour
     // Resets the jump count to maximum when the bottom collider is triggered by a wall
     private void OnTriggerEnter2D(Collider2D collision) //By Audran 
     {
-        if (collision.tag=="Wall")
+        if (collision.tag == "Wall")
         {
             NumberOfJumps = MaxNumberOfJumps;
         }

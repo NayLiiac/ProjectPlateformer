@@ -249,6 +249,7 @@ MonoBehaviour:
   DashCount: {fileID: 0}
   Health: 1
   DieOneTimeOnlyPlease: 0
+  SpawnLocation: {fileID: 0}
 --- !u!114 &8780903020442536238
 MonoBehaviour:
   m_ObjectHideFlags: 0
