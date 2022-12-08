@@ -13,19 +13,18 @@ public class DeathCount : MonoBehaviour
     // Initializes number of deaths :
     void Start()
     {
-        Deathcount.text = NumberOfDeaths.ToString();
+        NumberOfDeaths = PlayerPrefs.GetInt("DeathCounter");
+        Deathcount.text = PlayerPrefs.GetInt("DeathCounter").ToString();
     }
 
 
     public void OnDeath()
     {
-        PlayerController Pc = GetComponent<PlayerController>();
-        if (Pc.Health == 0)
-        {
-            NumberOfDeaths++;
-            
-        }
+        NumberOfDeaths++;
+        PlayerPrefs.SetInt("DeathCounter", NumberOfDeaths);
+        NumberOfDeaths = PlayerPrefs.GetInt("DeathCounter");
+
         Deathcount.text = NumberOfDeaths.ToString();
     }
-   
+
 }

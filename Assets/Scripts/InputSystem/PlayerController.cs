@@ -5,7 +5,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
 public class PlayerController : MonoBehaviour
 {
     //Move and Animator Variables 
@@ -84,13 +83,12 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsFalling", Rb.velocity.y < 0);
         }
 
-        //Checks the player's Health and sets the cursor visible 
+        //Checks the player's Health and disable player controller
         if (Health <= 0 && !DieOneTimeOnlyPlease)
         {
             DieOneTimeOnlyPlease = true;
             animator.SetTrigger("IsDead");
 
-            Cursor.visible = true;
             GetComponent<PlayerInput>().enabled = false;
         }
     }
@@ -146,13 +144,6 @@ public class PlayerController : MonoBehaviour
     public IEnumerator DeathWait()
     {
         yield return new WaitForSeconds(3f);
-        Health = 1;
-
-        Cursor.visible = false;
-        GetComponent<PlayerInput>().enabled = true;
-        transform.position = SpawnLocation.position;
-        animator.Play("Idle");
-        DieOneTimeOnlyPlease = false;
     }
 
 
