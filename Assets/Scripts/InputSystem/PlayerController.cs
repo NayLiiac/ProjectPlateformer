@@ -153,7 +153,6 @@ public class PlayerController : MonoBehaviour
         transform.position = SpawnLocation.position;
         animator.Play("Idle");
         DieOneTimeOnlyPlease = false;
-
     }
 
 

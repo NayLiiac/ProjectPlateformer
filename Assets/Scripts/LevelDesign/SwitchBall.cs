@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Switcher : MonoBehaviour
+public class SwitchBall : MonoBehaviour
 {
     Rigidbody2D Rb;
     Collider2D Cl;
