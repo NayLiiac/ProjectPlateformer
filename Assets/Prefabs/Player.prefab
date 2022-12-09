@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 8780903020442536234}
   - component: {fileID: 8780903020442536237}
   - component: {fileID: 1974010006}
-  - component: {fileID: 1373252218916308856}
+  - component: {fileID: 905535933036106164}
   - component: {fileID: 8780903020442536238}
   - component: {fileID: 442134959}
   - component: {fileID: 8780903020442536235}
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Deathcount: {fileID: 0}
   NumberOfDeaths: 0
---- !u!114 &1373252218916308856
+--- !u!114 &905535933036106164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
