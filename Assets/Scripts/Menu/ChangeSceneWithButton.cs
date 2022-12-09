@@ -10,6 +10,5 @@ public class ChangeSceneWithButton : MonoBehaviour
     public void NextScene()
     {
         SceneManager.LoadScene(SceneName);
-        if (SceneName=="Menu") Cursor.visible = true;
     }
 }
