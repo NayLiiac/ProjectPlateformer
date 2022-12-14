@@ -294,6 +294,17 @@
                 },
                 {
                     "name": "",
+                    "id": "1224f46b-bb15-4dd4-9caf-8009711198d3",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8076be86-c51f-4a6b-a5a6-3be7a1fc6dd8",
                     "path": "<Keyboard>/shift",
                     "interactions": "",
@@ -305,11 +316,33 @@
                 },
                 {
                     "name": "",
+                    "id": "452ffc03-ab33-492f-ac14-8066801df7db",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "53036bf4-bcc9-4956-9015-7c1865b9fb59",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "86f69e0e-2160-44ae-817b-ad6ab18fa69c",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
