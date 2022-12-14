@@ -13,10 +13,11 @@ public class SwitchSpawnSpikes : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         animator.SetBool("IsPlayerAround", collision.tag == "Player");
+        StartCoroutine(SwitchAgain());
     }
     private IEnumerator SwitchAgain()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
         animator.SetBool("IsPlayerAround", false);
     }
 }

@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseMenuObject: {fileID: 5568196877638247329}
   player: {fileID: 0}
+  DefaultButtonSelected: {fileID: 5568196878665075485}
 --- !u!1 &5568196877638247329
 GameObject:
   m_ObjectHideFlags: 0
