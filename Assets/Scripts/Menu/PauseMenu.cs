@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject PauseMenuObject = null;
     [SerializeField] GameObject player = null;
+    [SerializeField] Button DefaultButtonSelected = null;
     void OnPause()
     {
         PlayerController Pc = gameObject.GetComponent<PlayerController>();
@@ -22,6 +23,7 @@ public class PauseMenu : MonoBehaviour
                 gameObject.GetComponent<PlayerController>().enabled = false;
                 Time.timeScale = 0f;
                 PauseMenuObject.SetActive(true);
+                DefaultButtonSelected.Select();
                 Cursor.visible = true;
             }
             else
