@@ -4,6 +4,7 @@ using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem.XR.Haptics;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class PauseMenu : MonoBehaviour
 
         if (Pc.Health > 0 && PauseMenuObject != null)
         {
+            
             if (Time.timeScale == 1)
             {
                 gameObject.GetComponent<PlayerController>().enabled = false;

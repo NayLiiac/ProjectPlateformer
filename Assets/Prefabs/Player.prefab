@@ -256,6 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a15dde91eff7349a281ee558dd4876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseMenuObject: {fileID: 0}
+  player: {fileID: 8780903020442536239}
 --- !u!114 &8780903020442536238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,5 +369,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08797715, y: 0.018214688}
+  m_Size: {x: 0.04524386, y: 0.018214703}
   m_EdgeRadius: 0
