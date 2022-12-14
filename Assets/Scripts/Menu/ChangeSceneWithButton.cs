@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ChangeSceneWithButton : MonoBehaviour
 {
@@ -10,5 +11,16 @@ public class ChangeSceneWithButton : MonoBehaviour
     public void NextScene()
     {
         SceneManager.LoadScene(SceneName);
+    }
+    private void Start()
+    {
+        if (gameObject.name == "PlayButton")
+        {
+            GetComponent<Button>().Select();
+        }
+        if (gameObject.name == "Lvl1Button")
+        {
+            GetComponent<Button>().Select();
+        }
     }
 }

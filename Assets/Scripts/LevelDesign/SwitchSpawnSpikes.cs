@@ -14,11 +14,9 @@ public class SwitchSpawnSpikes : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         animator.SetBool("IsPlayerAround", collision.tag == "Player");
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private IEnumerator SwitchAgain()
     {
-        if (collision.tag == "Player")
-        {
-            animator.SetBool("IsPlayerAround", false);
-        }
+        yield return new WaitForSeconds(0.1f);
+        animator.SetBool("IsPlayerAround", false);
     }
 }
