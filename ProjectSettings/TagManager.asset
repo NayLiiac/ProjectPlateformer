@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Lava
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
     public bool DieOneTimeOnlyPlease = false;
     public Transform SpawnLocation = null;
 
+    //Checkpoint Variables
+    GameObject CPM = null;
+
 
 
     void Start()
@@ -52,6 +55,20 @@ public class PlayerController : MonoBehaviour
         NumberOfDash = MaxNumberOfDash;
         DashCount.text = NumberOfDash.ToString();
         transform.position = new Vector2(SpawnLocation.position.x, SpawnLocation.position.y);
+
+        //Check for checkpoint
+        //CPM = GameObject.FindWithTag("SpawnPoint");
+        //if (CPM != null)
+        //{
+        //    if (CPM.GetComponent<CheckpointManager>().StartLVL==true)
+        //    {
+
+        //    }
+        //    else
+        //    {
+
+        //    }
+        //}
     }
 
 

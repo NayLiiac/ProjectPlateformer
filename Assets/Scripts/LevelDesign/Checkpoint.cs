@@ -5,13 +5,17 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    public GameObject spawnpoint;
-
+    GameObject CPM = null;
+    private void Start()
+    {
+    CPM = GameObject.FindWithTag("SpawnPoint");
+        
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player" && spawnpoint != null)
+        if (other.tag == "Player")
         {
-            spawnpoint.transform.position = new Vector2(0, 45);
+            CPM.GetComponent<CheckpointManager>().Spawn = gameObject.transform.position;
         }
     }
 }
