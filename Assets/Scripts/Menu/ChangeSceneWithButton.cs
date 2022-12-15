@@ -22,5 +22,13 @@ public class ChangeSceneWithButton : MonoBehaviour
         {
             GetComponent<Button>().Select();
         }
+        if (gameObject.name == "BackButtonCredits")
+        {
+            GetComponent<Button>().Select();
+        }
+        if (gameObject.name == "BackButtonSettings")
+        {
+            GetComponent<Button>().Select();
+        }
     }
 }
