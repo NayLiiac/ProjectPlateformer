@@ -6,9 +6,16 @@ public class CheckpointManager : MonoBehaviour
 {
     //bool StartLVL = false;
     public Vector2 Spawn;
-    public bool StartLVL = false;
+    private void Awake()
+    {
+        if (GameObject.FindGameObjectsWithTag("SpawnPoint").Length>1)
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         DontDestroyOnLoad(gameObject);
     }
+
 }

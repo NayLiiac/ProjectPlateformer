@@ -33,10 +33,9 @@ public class PlayerController : MonoBehaviour
     //Health and Die Variables
     public int Health = 1;
     public bool DieOneTimeOnlyPlease = false;
-    public Transform SpawnLocation = null;
 
     //Checkpoint Variables
-    GameObject CPM = null;
+    [SerializeField] GameObject CPM = null;
 
 
 
@@ -54,21 +53,13 @@ public class PlayerController : MonoBehaviour
         NumberOfJumps = MaxNumberOfJumps;
         NumberOfDash = MaxNumberOfDash;
         DashCount.text = NumberOfDash.ToString();
-        transform.position = new Vector2(SpawnLocation.position.x, SpawnLocation.position.y);
 
         //Check for checkpoint
-        //CPM = GameObject.FindWithTag("SpawnPoint");
-        //if (CPM != null)
-        //{
-        //    if (CPM.GetComponent<CheckpointManager>().StartLVL==true)
-        //    {
-
-        //    }
-        //    else
-        //    {
-
-        //    }
-        //}
+        CPM = GameObject.FindWithTag("SpawnPoint");
+        if (CPM != null)
+        {
+            transform.position = CPM.GetComponent<CheckpointManager>().Spawn;
+        }
     }
 
 
@@ -163,7 +154,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(1.2f);
     }
-    
+
 
 
     //Allows the player to Dash while it has dash(s) to use and Write the numbers of dashs left to use in a UIText

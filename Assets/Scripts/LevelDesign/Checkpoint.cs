@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    GameObject CPM = null;
+    [SerializeField] GameObject CPM = null;
+    BoxCollider2D Coll = null;
     private void Start()
     {
-    CPM = GameObject.FindWithTag("SpawnPoint");
-        
+        CPM = GameObject.FindWithTag("SpawnPoint");
+        Coll = gameObject.GetComponent<BoxCollider2D>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
