@@ -9,7 +9,7 @@ public class ChangeSceneWithButton : MonoBehaviour
     public string SceneName;
 
     [SerializeField] GameObject CPM = null;
-    public Dictionary<string, Vector2> SpawnLocationsForLVls= new()
+    public Dictionary<string, Vector2> SpawnLocationsForLVls = new()
     {
         {"Level 1",new Vector2(-8,-5) },
         {"Level 2",new Vector2(18,37) },
@@ -59,7 +59,6 @@ public class ChangeSceneWithButton : MonoBehaviour
         if (Time.timeScale == 0)
         {
             Time.timeScale = 1f;
-            
         }
     }
 }
