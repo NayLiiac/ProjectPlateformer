@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
         NumberOfJumps = MaxNumberOfJumps;
         NumberOfDash = MaxNumberOfDash;
         DashCount.text = NumberOfDash.ToString();
+        transform.position = new Vector2(SpawnLocation.position.x, SpawnLocation.position.y);
     }
 
 
@@ -143,9 +144,9 @@ public class PlayerController : MonoBehaviour
     // Sets the timing of the Death animation
     public IEnumerator DeathWait()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.2f);
     }
-
+    
 
 
     //Allows the player to Dash while it has dash(s) to use and Write the numbers of dashs left to use in a UIText
