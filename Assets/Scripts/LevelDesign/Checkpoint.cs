@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    [SerializeField] GameObject spawnpoint;
+    public GameObject spawnpoint;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
