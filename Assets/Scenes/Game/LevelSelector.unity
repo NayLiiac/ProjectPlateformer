@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9416f8e533c92418d4820c85ce8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Lvl3
+  SceneName: Level 3
 --- !u!1 &405459324
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9416f8e533c92418d4820c85ce8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Lvl5
+  SceneName: Level 5
 --- !u!1 &497512516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9416f8e533c92418d4820c85ce8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Lvl4
+  SceneName: Level 4
 --- !u!1 &723763956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9416f8e533c92418d4820c85ce8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Lvl2
+  SceneName: Level 2
 --- !u!1 &1177560746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,7 +1719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9416f8e533c92418d4820c85ce8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Lvl6
+  SceneName: Level 6
 --- !u!1 &1428386462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,7 +2107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9416f8e533c92418d4820c85ce8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Lvl8
+  SceneName: Level 8
 --- !u!1 &1874766711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,7 +2684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9416f8e533c92418d4820c85ce8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Lvl1
+  SceneName: Level 1
 --- !u!1 &2118109384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,4 +2832,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9416f8e533c92418d4820c85ce8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Lvl7
+  SceneName: Level 7
